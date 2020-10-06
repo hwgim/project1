@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:regular,500,700);
+/* tag reset */
+body, ul, p, h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+ul{list-style: none;}
+a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit;}
+
+/* common class */
+.blind-b{width: 1px;height: 1px;overflow: hidden;border: none;position: absolute;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
+.blind-i{width: 1px;height: 1px;overflow: hidden;border: none;display: inline-block;margin: -1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
+
+.area{width: 1360px;margin: 0 auto;border: 1px solid red;}
+
+body{font-family: "Noto Sans KR";font-size: 16px;color: #333333;line-height: 1.5;}
+
+.con_tit{display: block; margin-left: 40px;  letter-spacing: -0.7px; font-size: 50px; font-weight: bold;}
+.c_sub_tit{display: block; margin-left: 40px;  letter-spacing: -0.7px; font-size: 30px; font-weight: bold;}
+
+
+/* contents */
+/* #mainSlider */
+#mainSlider, #mainSlider .visual li{width: 100%;height: 790px;}
+#mainSlider{position: relative;}
+#mainSlider .visual li{background: no-repeat center top;color: #ffffff;text-align: center;line-height: 52px;}
+#mainSlider .visual li:nth-child(1){background-image: url("../images/railpass/main1.jpg");}
+#mainSlider .visual li:nth-child(2){background-image: url("../images/railpass/main1.jpg");}
+#mainSlider .visual li:nth-child(3){background-image: url("../images/railpass/main1.jpg");}
+
+.tit_p{display: block;margin-top: 208px;letter-spacing: -0.7px; font-weight: 200;}
+.tit{display: block;padding-top: 21px; letter-spacing: -0.7px; font-size: 60px;
+    font-weight: bold;}
+.sub_tit{display: block; padding-top: 0; font-weight: 400;font-size: 50px;}
+#mainSlider .visual li p{letter-spacing: -0.5px; padding-top: 10px;font-weight: 200; font-size: 18px; line-height: 28px;}
+
+/* 제어 버튼들 : 스크립트에서 동적 생성 */
+#mainSlider .bx-controls-direction a, #mainSlider .bx-controls-auto, #mainSlider .bx-pager{position: absolute;z-index: 100;}
+/* 1) 이전 , 다음 */
+#mainSlider .bx-controls-direction a{top: 312px;width: 54px;height: 53px;}
+#mainSlider .bx-controls-direction .bx-prev{left: 20px;background: url("../images/railpass/icon/btn_prev.png");}
+#mainSlider .bx-controls-direction .bx-next{right: 20px;background: url("../images/railpass/icon/btn_next.png");}
+
+/* 2) play, stop */
+#mainSlider .bx-controls-auto{top: 550px;left: calc(50% + 36.5px);}
+#mainSlider .bx-controls-auto a{display: block;width: 27px;height: 27px;background: url("../images/railpass/icon/btn_pause_play.png") no-repeat;}
+#mainSlider .bx-controls-auto .bx-start{background-position: right top;}
+#mainSlider .bx-controls-auto .bx-stop{background-position: left top;}
+#mainSlider .bx-controls-auto a.active{display: none;}/* 현재 동작중인 버튼이 .active라는 클래스명을 가짐 */
+
+/* 3) 페이징 인디케이터 */
+#mainSlider .bx-pager{top: 556px;left: calc(50% - 63.5px);width: 100px;height: 15px;}
+#mainSlider .bx-pager div{float: left;width: 15px;margin-right: 10px;}
+#mainSlider .bx-pager div a{display: block;height: 15px;border: 2px solid #fff;box-sizing: border-box;border-radius: 50%;}
+#mainSlider .bx-pager div a.active{background: #ffffff;}
+/* // slider end! */
+
+/* #con1 : 내일로패스란? */
+#con1{width: 1360px;height: 702px; margin-top: 210px;
+  background-image: url("../images/railpass/con1.jpg"); overflow: hidden; color: #ffffff;}
+  
+#con1 h2{display: block; margin-left: 40px; padding-top: 393px; letter-spacing: -0.7px; font-size: 50px;    font-weight: bold;}
+#con1 p{display: block; margin-left: 40px; padding-top: 8px; letter-spacing: -0.7px;}
+  
+/* #con2 : 내일로패스란? */
+#con2{width: 1360px;height: 702px; margin-top: 210px;
+    background:pink; overflow: hidden; color: #333333; text-align: center;}
+#con2 ul p{display: block; padding-top: 20px; letter-spacing: -0.7px;}
+    
+#con2 ul{width: 1360px; height: 400px;margin-top: 40px; text-align: center;} 
+#con2 ul li{position: relative; float: left;margin-left: 183px; width: 301px;height: 301px;box-shadow: 8px 11.5px 50px 0 rgba(0, 0, 0, 0.2);
+      background-color: skyblue; border-radius: 50%;}
+#con2 ul li+li{margin-left: 83px;}
+#con2 .circle strong{display: block; padding-top: 30px; letter-spacing: -0.7px; font-size: 32px;font-weight: bold;}
+      
+#con2 li:focus, #con2 li:hover{background-color: red; }
+      
+/* #con3 : 내일로 이용안내 -tab1*/
+#con3{width: 1360px;height: 702px; margin-top: 210px;
+        background:lightblue ; overflow: hidden; color: #333333; text-align: center;}
+
+/* #mainTab */
+/* 1) 탭 크기 지정 */
+#mainTab{width: 1170px;height: 680px;margin: 100px auto;text-align: center;}
+/* 2) 탭그룹의 높이와 하단 여백 */
+#mainTab .tablist{height: 50px;margin-bottom: 30px;}
+/* 3) 탭을 한줄에 위치, 스타일 */
+#mainTab .tab{float: left;width: 380px;height: 50px;line-height: 48px;border: 1px solid #ccc;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #f2f2f2;font-size: 18px;color: #000;}
+#mainTab .tab + .tab{margin-left: 15px;}
+/* 4) 탭버튼 활성화 - 오버, li.active (포커스는 제외) */
+#mainTab .tab:hover, #mainTab .tab.active{background: #00326c;border-color: #00326c;color: #ffffff;cursor: pointer;}
+/* 5) 탭패널 공통스타일 - 마지막 자식인 자세히보기링크를 absolute주기 위해, 모든 탭패널은 숨기고, .active를 가질 경우만 보이게 처리 */
+#mainTab .tabpanel{position: relative;padding-bottom: 70px;display: none;color: #ffffff;}
+#mainTab .tabpanel.active{display: block;}
+
+        
+/* con4 : 구매 및 좌석 지정방법 -tab2 */
+#con4{width: 1360px;height: 1618px; margin-top: 210px;
+  background:lightgreen ; overflow: hidden; color: #333333; text-align: center;}
+#con4 .applist li figure img{width: 338px;height: 581px;}
+
+/* #mainTab */
+/* 1) 탭 크기 지정 */
+#mainTab2{width: 1170px;height: 680px;margin: 100px auto;text-align: center;}
+/* 2) 탭그룹의 높이와 하단 여백 */
+#mainTab2 .tablist{  width: 681px;height: 100px;
+  background-color: #50a7e5;margin-bottom: 30px;}
+/* 3) 탭을 한줄에 위치, 스타일 */
+#mainTab2 .tab{float: left;width: 380px;height: 50px;line-height: 48px;border: 1px solid #ccc;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #f2f2f2;font-size: 18px;color: #000;}
+#mainTab2 .tab + .tab{margin-left: 15px;}
+/* 4) 탭버튼 활성화 - 오버, li.active (포커스는 제외) */
+#mainTab2 .tab:hover, #mainTab .tab.active{background: #00326c;border-color: #00326c;color: #ffffff;cursor: pointer;}
+/* 5) 탭패널 공통스타일 - 마지막 자식인 자세히보기링크를 absolute주기 위해, 모든 탭패널은 숨기고, .active를 가질 경우만 보이게 처리 */
+#mainTab2 .tabpanel{position: relative;padding-bottom: 70px;display: none;color: #ffffff;}
+#mainTab2 .tabpanel.active{display: block;}
+
+/* con5 : 주의사항 */
+#con5{width: 1360px;height: 323px; margin-top: 210px;
+  background:lightgray; overflow: hidden; color: #333333; text-align: center;}
+  
+/* con6 : 문의처 */
+#con6{width: 1360px;height: 236px; margin-top: 210px;
+  background:lightgray; overflow: hidden; color: #333333; text-align: center;}
