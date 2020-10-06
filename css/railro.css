@@ -23,8 +23,8 @@ body{font-family: "Noto Sans KR";font-size: 16px;color: #333333;line-height: 1.5
 #mainSlider{position: relative;}
 #mainSlider .visual li{background: no-repeat center top;color: #ffffff;text-align: center;line-height: 52px;}
 #mainSlider .visual li:nth-child(1){background-image: url("../images/railpass/main1.jpg");}
-#mainSlider .visual li:nth-child(2){background-image: url("../images/railpass/main1.jpg");}
-#mainSlider .visual li:nth-child(3){background-image: url("../images/railpass/main1.jpg");}
+#mainSlider .visual li:nth-child(2){background-image: url("../images/railpass/main2.jpg");}
+#mainSlider .visual li:nth-child(3){background-image: url("../images/railpass/main3.jpg");}
 
 .tit_p{display: block;margin-top: 208px;letter-spacing: -0.7px; font-weight: 200;}
 .tit{display: block;padding-top: 21px; letter-spacing: -0.7px; font-size: 60px;
