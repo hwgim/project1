@@ -1,6 +1,9 @@
 /* header */
 
-/* -------tour page start------- */
+/* ------- tour page start ------- */
+
+.c_sub_tit{letter-spacing: -0.7px; font-size: 30px; font-weight: bold;text-align: center;}
+
 #mainSlider ul li h2{display: block;margin-top: 274px;  letter-spacing: -0.7px; font-size: 60px;
     font-weight: bold;}
 #mainSlider ul li strong{display: block; margin-top: 21px; font-weight: 400;font-size: 50px;}
@@ -38,13 +41,45 @@
 #mainSlider .bx-pager div a.active{background: #ffffff;}
 /* // slider end! */
 
-/* area */
+/* ------- area ------- */
 
-/* #con1 : 국내여행 지역별  BEST */
-/* #con2 : 오늘의 핫 키워드 #테마여행 #패키지 */
-/* #con3 : 배너 슬라이드*/
-/* #con4 : 할인 & 특별 추천 패키지*/
-/* #con5 : 코레일 투어 생생후기*/
+/* #tcon1 : 국내여행 지역별 BEST - 
+#localTab*/
+
+/* 1) 탭의 크기 지정 */
+#localTab{width: 1200px;height: 549px;margin: 100px auto;}
+/* 2) .tablist에게 자식이 float되어 부모가 높이를 인식하지 못하는 문제 해결 */
+#localTab .tablist{height: 46px;margin-bottom: 40px;}
+/* 3) .tab이라는 li를 한줄에 위치 */
+#localTab .tab{position: relative;float: left;width: 200px;line-height: 44px;border-bottom: 5px solid #aaa;text-align: center;cursor: pointer;}
+/* 4) .tab.active 라는 클래스명을 가져 활성화 되었을 경우ㅡ*/
+#localTab .tab.active{color: #50a7e5;border-bottom-color: #50a7e5;}
+#localTab .tab.active::after{content: "";position: absolute;bottom: -8px;left: calc(50% - 6.5px);width: 13px;height: 8px;background: url("../images/tab_b_icon.png") no-repeat;}
+/* left: 50%;margin-left: -6.5px; */
+/* 5) .tabpanel 모두를 숨기고 .tabpanel.active를 동시에 갖을 경우만 보이게 처리 */
+#localTab .tabpanel{display: none;}
+#localTab .tabpanel.active{display: block;}
+/* 6) .tabpanle li 제어 */
+#localTab .tabpanel ul{float: left;position: relative; transition-duration: 0s;}
+#localTab .tabpanel ul li{float: left;position: relative; width: 288px;}
+#localTab .tabpanel ul li+li{margin-left: 12px;}
+#localTab .tabpanel ul li a{position: relative;
+    display: inline-block;width: 260px; height: 404px;
+    background: #fff;border-radius: 8px;overflow: hidden;
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+#localTab .tabpanel .inner-top{display: block;height: 220px;overflow: hidden;}
+#localTab .tabpanel .inner-top img{transform: scale(1);transition: all 0.2s;}
+#localTab .tabpanel .inner-top img:hover{transform: scale(1.1);transition: all 0.2s;}
+#localTab .tabpanel .inner-bottom{display: block;padding: 30px 20px;box-sizing: border-box;min-height: 144px;}
+#localTab .tabpanel .inner-tit{display: block;font-size: 16px; font-weight: 700; color: #333}
+#localTab .tabpanel .inner-cont{display: block;font-size: 14px;height: 40px;color: #333;margin: 10px 0;line-height: 1.4em;}
+#localTab .tabpanel .inner-price{display: block;font-size: 16px;color: #f2312c;font-weight: bold;margin-top: 8px;line-height: normal;}
+
+/* #tcon2 : 오늘의 핫 키워드 #테마여행 #패키지 */
+/* #tcon3 : 배너 슬라이드*/
+/* #tcon4 : 할인 & 특별 추천 패키지*/
+/* #tcon5 : 코레일 투어 생생후기*/
 
 
 

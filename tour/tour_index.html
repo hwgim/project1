@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title> 여행상품 패키지 </title>
+    <title>코레일투어 :: 여행상품 패키지</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/tour.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../images/Ko.ico">
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/jquery.bxslider.min.js"></script>
-    <script src="../js/tab.js"></script>
+    <script src="../js/tab2.js"></script>
     <script>
         $(document).ready(function () {
             $('#mainSlider .visual').bxSlider({
@@ -74,8 +74,82 @@
 
     <div class="area">
         <!-- 1360픽셀 문서 가운데 위치 - 공통클래스 선언 -->
+        <section class="tcon1">
+            <h4 class="c_sub_tit">국내여행 지역별 BEST</h4>
 
-
+            <!-- ARIA
+    role(역할, 기능), property(관계, 특징), state(현재의 상태) -->
+            <div id="localTab">
+                <ul role="tablist" class="tablist" aria-label="국내여행 지역별 BEST">
+                    <li role="tab" class="tab first" id="tab1" aria-controls="tabpanel1">수도권</li>
+                    <li role="tab" class="tab" id="tab2" aria-controls="tabpanel2">강원권</li>
+                    <li role="tab" class="tab" id="tab3" aria-controls="tabpanel3">충청권</li>
+                    <li role="tab" class="tab" id="tab4" aria-controls="tabpanel4">경상권</li>
+                    <li role="tab" class="tab" id="tab5" aria-controls="tabpanel5">전라권</li>
+                    <li role="tab" class="tab last" id="tab6" aria-controls="tabpanel5">제주권</li>
+                </ul>
+                <div role="tabpanel" class="tabpanel" id="tabpanel1" aria-labelledby="tab1">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span class="inner-top">
+                                    <img src=" ../images/tour/local1_1.jpg" alt=""> 
+                                </span>
+                                <span class="inner-bottom">
+                                    <span class="inner-tit">한복입고 떠나는 경복궁</span>
+                                    <span class="inner-cont">#야간투어<br />#커플추천여행</span>
+                                    <span class="inner-price">55,140원~</span>
+                                </span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="inner-top">
+                                    <img src=" ../images/tour/local1_2.jpg" alt=""> 
+                                </span>
+                                <span class="inner-bottom">
+                                    <span class="inner-tit">[서울시티투어] 북촌 한옥마을</span>
+                                    <span class="inner-cont">#야간투어<br />#커플추천여행</span>
+                                    <span class="inner-price">55,140원~</span>
+                                </span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="inner-top">
+                                    <img src=" ../images/tour/local1_3.jpg" alt=""> </span>
+                                <span class="inner-bottom">
+                                    <span class="inner-tit">[story cruise]
+                                        한강 낭만크루즈</span>
+                                    <span class="inner-cont">#야간투어<br />#커플추천여행</span>
+                                    <span class="inner-price">55,140원~</span>
+                                </span></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="inner-top">
+                                    <img src=" ../images/tour/local1_4.jpg" alt="">
+                                </span>
+                                <span class="inner-bottom">
+                                    <span class="inner-tit">[DMZ-train] 도라산 평화관광</span>
+                                    <span class="inner-cont">#가을 #가족여행<br>#역사속으로</span>
+                                    <span class="inner-price">55,140원~</span>
+                                </span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section class="tcon2">
+        <h4 class="c_sub_tit">오늘의 핫 키워드 #테마여행 #패키지 </h4>
+    </section>
+    <section class="tcon3">
+    </section>
+    <section class="tcon4">
+        <h4 class="c_sub_tit">할인 & 특별 추천 패키지</h4>
+    </section>
+    <section class="tcon5">
+        <h4 class="c_sub_tit">생생 여행 후기</h4>
+    </section>
     </div>
 </body>
 
