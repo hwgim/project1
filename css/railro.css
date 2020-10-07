@@ -113,28 +113,32 @@ font-size: 24px;text-align: left;color:#333333;}
 
 /* con4 : 구매 및 좌석 지정방법 -tab2 */
 #con4{width: 1360px;height: 1618px; margin-top: 210px;
-  background:lightgreen ; overflow: hidden; color: #333333; text-align: center;}
-#con4 .applist li figure img{width: 338px;height: 581px;}
+   overflow: hidden; color: #333333; text-align: center;}
 
-/* #mainTab */
+/* #con4Tab */
 /* 1) 탭 크기 지정 */
-#mainTab2{width: 1170px;height: 680px;margin: 100px auto;text-align: center;}
+#con4Tab{width: 1360px;height: 680px;margin: 100px auto;text-align: center;position: relative; float: left;}
 /* 2) 탭그룹의 높이와 하단 여백 */
-#mainTab2 .tablist{  width: 681px;height: 100px;
-  background-color: #50a7e5;margin-bottom: 30px;}
+#con4Tab .tablist{width: 1360px;height: 100px;
+  margin-bottom: 30px;}
 /* 3) 탭을 한줄에 위치, 스타일 */
-#mainTab2 .tab{float: left;width: 380px;height: 50px;line-height: 48px;border: 1px solid #ccc;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #f2f2f2;font-size: 18px;color: #000;}
-#mainTab2 .tab + .tab{margin-left: 15px;}
+#con4Tab .tab{float: left;width: 680px;height: 50px;line-height: 48px;border: 1px solid #ccc;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #f2f2f2;font-size: 18px;color: #000;}
 /* 4) 탭버튼 활성화 - 오버, li.active (포커스는 제외) */
-#mainTab2 .tab:hover, #mainTab .tab.active{background: #00326c;border-color: #00326c;color: #ffffff;cursor: pointer;}
+#con4Tab .tab:hover,#con4Tab .tab.active{background: #00326c;border-color: #00326c;color: #ffffff;cursor: pointer;}
 /* 5) 탭패널 공통스타일 - 마지막 자식인 자세히보기링크를 absolute주기 위해, 모든 탭패널은 숨기고, .active를 가질 경우만 보이게 처리 */
-#mainTab2 .tabpanel{position: relative;padding-bottom: 70px;display: none;color: #ffffff;}
-#mainTab2 .tabpanel.active{display: block;}
+#con4Tab .tabpanel{position: relative;padding-bottom: 70px;display: none;color: #ffffff;}
+#con4Tab .tabpanel.active{display: block;}
+
+#con4Tab .bg{background:lightgreen ;width: 1360px;height: 1300px;}
+#con4 .applist{position: absolute; float: left;left: 0; top: 0; width: 1360px;}
+#con4 .applist li figure img{box-sizing: border-box; position: absolute; float: left; width: 338px;height: 581px;}
+
 
 /* con5 : 주의사항 */
 #con5{position: relative; float: left; width: 1360px;height: 323px;color: #333333;text-align: center;margin-top: 210px;}
-#con5 h4{position: absolute; float: left; width: 1360px;height: 323px;background:#f3f3f3; }
-#con5 .con5_txt{z-index: 100;}  
+#con5 h4{position: absolute; float: left; display: block; width: 1360px;height: 323px;}
+#con5 .con5_txt{position: absolute; float: left;display: block; margin-top: 100px; text-align: left; padding-top: 40px;padding-left: 100px; line-height: 60px; border: 1px solid red;background:#f3f3f3;width: 1260px;height: 323px;font-size: 20px}  
+
 /* con6 : 문의처 */
 #con6{position: relative; float: left; width: 1360px;height: 236px; margin-top: 210px;
  margin-bottom: 37px; color: #333333; text-align: center;}
