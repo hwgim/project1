@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  //1) 로딩이 완료된후 초기화면 설정
+	/* 1) 초기값 */
   $('.tab:first-of-type, .tabpanel:first-of-type').addClass('active').attr('tabIndex', 0);
   $('.tab:first-of-type').attr('aria-selected', true).siblings().attr('aria-selected', false);
   $('.tabpanel:first-of-type').attr('aria-hidden', false).siblings('.tabpanel').attr('aria-hidden', true);
@@ -45,20 +45,4 @@ $(document).ready(function() {
     $target.addClass('active').attr({'aria-selected': true, tabIndex: 0}).siblings().removeClass('active').attr({'aria-selected': false, tabIndex: -1});
     $('#' + $target.attr('aria-controls')).addClass('active').attr({'aria-hidden': false, tabIndex: 0}).siblings('.tabpanel').removeClass('active').attr({'aria-hidden': true, tabIndex: -1});
   }
-
-  //생활속 휴비스 tabpanel의 링크를 클릭하여 팝업창 열기
-  var popupArr = new Array(3);
-  popupArr[0] = 'https://www.youtube-nocookie.com/embed/GXm9FPp5Vak?rel=0&amp;showinfo=0';
-  popupArr[1] = 'https://www.youtube.com/embed/Yzl5pLwSqwg?rel=0&showinfo=0';
-  popupArr[2] = 'https://www.youtube.com/embed/vj_dzmE_Qek?rel=0';
-  //window.open( 팝업창 url경로명, 팝업창 별명, 기타옵션) : 853 x 480
-  $('#storyTab .tabpanel button').on('click', function () {
-    //var btnNum = $(this).closest('.tabpanel').attr('id').slice(8) - 1;
-    var btnNum = $(this).data('index');   //0, 1, 2
-    var leftPos = (screen.availWidth - 853) / 2;
-    var topPos = (screen.availHeight - 480) / 2;
-    console.log(btnNum, screen.availWidth,  leftPos, screen.availHeight, topPos);
-
-    window.open(popupArr[btnNum], 'popup', 'left='+leftPos+', top='+topPos+', width=853, height=480');
-  });
 });

@@ -1,15 +1,6 @@
 $(document).ready(function (){
-    var $header = $('#header');
-    var $gnb=$("#gnb > ul");
-    
-    $('#skip a').on('click', function () {
-        var target = $(this).attr('href');
-        console.log(target);
-
-        $(target).attr('tabIndex', -1).focus();
-
-        return false;
-      });
+	var $header = $('#header');
+	var $gnb=$("#gnb > ul");
 			
 	$gnb.find(">li>ul").hide();	//depth2의 ul 태그는 자동으로 숨기고 시작
 

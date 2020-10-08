@@ -7,7 +7,7 @@ body, h1, h2, h3, h4, h5, h6, ul, p, button,th, td, form, fieldset, figure{margi
 h1, h2, h3, h4, h5, h6{font-size: inherit;}
 ul{list-style: none;}
 a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit;}
-img{border: none;vertical-align: top;}aption
+img{border: none;vertical-align: top;}
 header, nav, section, footer, figure, figcaption{display: block;}
 button{border: none;background: none;cursor: pointer;}
 address{font-style: normal;}
@@ -28,17 +28,18 @@ div[id] => div 태그 중에서 id 속성을 가진 선택자
 /* common class */
 .blind-i{width: 1px;height: 1px;overflow: hidden;border: none;display: inline-block;margin: -1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 .blind-b{width: 1px;height: 1px;overflow: hidden;border: none;position: absolute;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
-.area{width: 1360px;margin: 0 auto;}
+.area{width: 1360px;margin: 0 auto;border: 1px solid blue;}
 .clearfix::after{content: ""; display: block;clear: both;}
 .p_r{position: relative;}
 .p_a{position: absolute;}
 .font_white{color: #ffffff;}
+.boxsizing{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 
 body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333333; line-height: 1;}
 /* header,footer{padding-left: 280px; padding-right: 280px;} */
 
 /* skip navigation */
-#skip a{position: absolute;top: 0;left: -9999px;z-index: 100;}
+#skip a{position: absolute;top: 0;left: -9999px;z-index: 1000;}
 #skip a:focus{left: 0;background: #999999;width: 100%;height: 50px;line-height: 50px;text-align: center;font-weight: 700;color: #ffffff;}
 
 /* header>div, 서브본문, 서브배너, footer 공통 사이즈 선언*/
@@ -83,7 +84,7 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 #header .bluebox a:hover, #gnb .bluebox a:focus{background: #fff; color: #083b82; border: 1px solid#083b82;transition:all 0.3s;}
 
 /* footer */
-#footer{height: 300px; margin: 1080px auto;border-top: 1px solid #333333;background: gray;}
+#footer{height: 300px; border-top: 1px solid #333333;background: gray;}
 #footer .in_foot{background: yellow;}
 #footer ul{height: 19px;margin-bottom: 131px;padding-top: 50px;}
 #footer ul li{float: left;width: 270px;text-align: center;line-height: 18px;}
