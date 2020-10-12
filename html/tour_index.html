@@ -12,7 +12,6 @@
     <script src="../js/jquery.bxslider.min.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/tab.js"></script>
-    <script src="../js/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#t_mainSlider .visual').bxSlider({
@@ -63,12 +62,12 @@
 <body>
     <!-- header 시작 -->
     <div id="skip">
-        <a href="">본문 바로가기</a>
+        <a href="#fullpage">본문 바로가기</a>
     </div>
     <header id="header">
         <div class="area clearfix p_r">
             <h1 class="logo p_a">
-                <a href=""><img src="../images/common/nav_logo.png" alt="레츠코레일"></a>
+                <a href="../index.html"><img src="images/common/nav_logo.png" alt="레츠코레일"></a>
             </h1>
             <nav id="gnb">
                 <h2 class="blind-b">주메뉴</h2>
@@ -91,7 +90,7 @@
                         </ul>
                     </li>
                     <li id="menu2" class="menu">
-                        <a href="">관광 열차</a>
+                        <a href="../html/Atrain.html">관광 열차</a>
                         <ul class="depth2">
                             <li class="cblue">
                                 <a href=""><span>동해산타열차</span></a>
@@ -127,7 +126,7 @@
                                 </ul>
                             </li>
                             <li class="cblue">
-                                <a href=""><span>정선아리랑열차</span></a>
+                                <a href="../html/Atrain.html"><span>정선아리랑열차</span></a>
                                 <ul class="depth3 cblack">
                                     <li>
                                         <a href=""><span>A-train 소개</span></a>
@@ -175,12 +174,12 @@
                         </ul>
                     </li>
                     <li id="menu3" class="menu">
-                        <a href="">자유 여행</a>
+                        <a href="../html/railro.html">자유 여행</a>
                         <ul class="depth2">
                             <li class="cblue menu2">
                                 <a href=""><span>국내여행패스</span></a>
                                 <ul class="depth3 cblack">
-                                    <li><a href=""><span>내일로</span></a></li>
+                                    <li><a href="../html/railro.html"><span>내일로</span></a></li>
                                     <li><a href=""><span>문화누리패스</span></a></li>
                                 </ul>
                             </li>
@@ -194,7 +193,7 @@
                         </ul>
                     </li>
                     <li id="menu4" class="menu">
-                        <a href="">여행 상품</a>
+                        <a href="../html/tour_index.html">여행 상품</a>
                         <ul class="depth2">
                             <li class="cblue p_r">
                                 <a href=""><span>테마별 패키지</span></a>
@@ -225,7 +224,7 @@
                         </ul>
                     </li>
                     <li id="menu5" class="menu">
-                        <a href="">숙소 예약</a>
+                        <a href="../html/hotel.html">숙소 예약</a>
                         <ul class="depth2 cblack">
                             <li><a href=""><span>호텔</span></a></li>
                             <li><a href=""><span>리조트</span></a></li>
@@ -236,7 +235,7 @@
             </nav>
             <div class="bluebox p_a">
                 <a href="">회원가입</a>
-                <a href="">로그인</a>
+                <a href="../html/login.html">로그인</a>
             </div>
         </div>
     </header>
@@ -248,17 +247,18 @@
             <li>
                 <h2>국내 패키지 여행</h2>
                 <strong>어디로 떠날까요?</strong>
-                <form action="search.php" method="post" label="여행지검색">
-                    <input type="text" id="uid" name="uid" placeholder="여행지 검색">
+                <form action="search.php" method="post">
+                    <input type="text" id="uid1" name="uid" placeholder="여행지 검색" title="여행지 검색">
                     <button type="submit" class="button">
                         <i class="fas fa-search-location"></i>
+                    </button>
                 </form>
             </li>
             <li>
                 <h2>국내 패키지 여행</h2>
                 <strong>어디로 떠날까요?</strong>
-                <form action="search.php" method="post" label="여행지검색">
-                    <input type="text" id="uid" name="uid" placeholder="여행지 검색">
+                <form action="search.php" method="post">
+                    <input type="text" id="uid2" name="uid" placeholder="여행지 검색" title="여행지 검색">
                     <button type="submit" class="button">
                         <i class="fas fa-search-location"></i></button>
                 </form>
@@ -266,8 +266,8 @@
             <li>
                 <h2>국내 패키지 여행</h2>
                 <strong>어디로 떠날까요?</strong>
-                <form action="search.php" method="post" label="여행지검색">
-                    <input type="text" id="uid" name="uid" placeholder="여행지 검색">
+                <form action="search.php" method="post">
+                    <input type="text" id="uid3" name="uid" placeholder="여행지 검색" title="여행지 검색">
                     <button type="submit" class="button">
                         <i class="fas fa-search-location"></i></button>
                 </form>
@@ -621,7 +621,6 @@
             <div class="review">
                 <div class="youtube">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/FMpjYi9Dr48" title="유튜브 영상"
-                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
@@ -647,9 +646,6 @@
             </div>
         </section>
     </div>
-
-    <!-- footer 시작 -->
-
     <footer id="footer">
         <div class="area in_foot">
             <ul>
@@ -660,14 +656,12 @@
                 <li><a href="#">정보공개</a></li>
             </ul>
             <div class="longtxt">
-                <p>대표자 : 손병석 | 상호 : 한국철도공사 | 사업자등록 : 314-52-10024 | 통신판매업신고 : 대전동구-0233호 <address> | 주소 : (34618) 대전광역시
-                        동구 중앙로 240 </address> | TEL : 1544-7788 | FAX : 02-361-8385</p>
+                <p>대표자 : 손병석 | 상호 : 한국철도공사 | 사업자등록 : 314-52-10024 | 통신판매업신고 : 대전동구-0233호 </p>
+                <address> | 주소 : (34618) 대전광역시 동구 중앙로 240 | TEL : 1544-7788 | FAX : 02-361-8385</address>
             </div>
             <p class="copy">COPYRIGHT @ KOREA RAILROAD. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
-
-    <!-- //footer 끝 -->
 </body>
 
 </html>

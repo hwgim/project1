@@ -43,7 +43,7 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 #gnb ul .menu>a{height: 100px; text-align: left; line-height: 100px; padding: 0 30px;}
 #gnb ul .menu>a::after, #gnb ul .menu>a::after{content:""; position:absolute; left: 0;bottom: 0;height: 3px;background:  #083b82;width: 0;transition:width 0.3s;}
 #gnb ul .menu:hover>a::after, #gnb ul .menu:focus>a::after{width: 100%;}
-#gnb ul .menu>ul{position: absolute; top: 100px; left: 0; width: 1240px; height: 350px; padding-top: 35px; line-height: 30px;}
+#gnb ul .menu>ul{position: absolute; top: 100px; left: 0; height: 350px; padding-top: 35px; line-height: 30px;}
 #gnb ul #menu1>ul{width: 150px; height: 130px;}
 #gnb ul #menu2>ul{width: 485px;}
 #gnb ul #menu3>ul{width: 385px;}
@@ -62,9 +62,9 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 #gnb ul li ul li a:hover::before,#gnb ul li ul li a:focus::before{background: #FECD6E;}
 #gnb ul .depth2 .menu2+.menu2{margin-left: 35px;}
 #header .bluebox {font-size: 15px; top: 35px; right: 0; height: 20px;}
-#header .bluebox a{float: left; text-align: center; width: 90px;height: 30px; line-height: 30px; background-color: #083b82; color: #ffffff; border: 1px solid #ffffff; }
+#header .bluebox a{float: left; text-align: center; width: 90px;height: 30px; line-height: 30px; background-color: #083b82; color: #fff; border: 1px solid #ffffff; }
 #header .bluebox a+a{margin-left: 20px;}
-#header .bluebox a:hover, #gnb .bluebox a:focus{background: #ffffff; color: #083b82; border: 1px solid#083b82;transition:all 0.3s;}
+#header .bluebox a:hover, #gnb .bluebox a:focus{background: #fff; color: #083b82; border: 1px solid#083b82;transition:all 0.3s;}
 #header .bluebox a:focus{outline:3px solid #fc4a1e;}
 
 /* 툴팁 */

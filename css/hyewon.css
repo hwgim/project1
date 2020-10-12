@@ -144,16 +144,6 @@ font-size: 24px;text-align: left;color:#333333;}
 #t_mainSlider button:focus, #t_mainSlider button:hover{background: #50a7e5;color:#ffffff;}
 #t_mainSlider button img{width: 50px;height: 50px;}
 
-
-#t_mainSlider ul li h2{display: block;margin-top: 274px;  letter-spacing: -0.7px; font-size: 60px;
-    font-weight: bold;}
-#t_mainSlider ul li strong{display: block; margin-top: 21px; font-weight: 400;font-size: 50px;}
-#t_mainSlider form{margin-top: 65px;text-align: center;}
-#t_mainSlider form input{width: 400px; height: 60px;text-align: center;border-radius: 10px;color: #333333}
-#t_mainSlider button{width: 60px;height: 60px;background: #eee; border-radius: 10px;color: #333333}
-#t_mainSlider button:focus, #t_mainSlider button:hover{background: #50a7e5;color:#ffffff;}
-#t_mainSlider button img{width: 50px;height: 50px;}
-
 /* #t_mainSlider */
 #t_mainSlider, #t_mainSlider .visual li{width: 100%;height: 790px;}
 #t_mainSlider{position: relative;}
@@ -240,15 +230,17 @@ font-size: 24px;text-align: left;color:#333333;}
 
 /* 제어 버튼들 : 스크립트에서 동적 생성 */
 #eventSlider .bx-controls-direction a, #eventSlider .bx-controls-auto, #eventSlider .bx-pager{position: absolute;z-index: 100;}
+/* 1) 이전 , 다음 */
+#eventSlider .bx-controls-direction a{top: 100px;width: 54px;height: 53px;}
 
-/* play, stop */
+/* 2) play, stop */
 #eventSlider .bx-controls-auto{top: 350px;left: calc(50% + 36.5px);}
 #eventSlider .bx-controls-auto a{display: block;width: 27px;height: 27px;background: url("../images/tour/icon/btn_pause_play.png") no-repeat;}
 #eventSlider .bx-controls-auto .bx-start{background-position: right top;}
 #eventSlider .bx-controls-auto .bx-stop{background-position: left top;}
 #eventSlider .bx-controls-auto a.active{display: none;}/* 현재 동작중인 버튼이 .active라는 클래스명을 가짐 */
 
-/* 페이징 인디케이터 */
+/* 3) 페이징 인디케이터 */
 #eventSlider .bx-pager{top: 356px;left: calc(50% - 63.5px);width: 100px;height: 15px;}
 #eventSlider .bx-pager div{float: left;width: 15px;margin-right: 10px;}
 #eventSlider .bx-pager div a{display: block;height: 15px;border: 2px solid #fff;box-sizing: border-box;border-radius: 50%;}
@@ -264,6 +256,7 @@ font-size: 24px;text-align: left;color:#333333;}
 #tcon5{width: 1360px; margin-top: 210px;}
 .review{position: relative; left: 0;top: 0; height: 315px;background:#f7f7f7;margin-top: 135px;margin-bottom: 231px;}
 .youtube{position: absolute;left: 0;top: 0;width:560px; height:315px;}
+.youtube iframe{border: none;}
 .review_box{position: absolute; left: 660px;top: 0;padding: 50px;}
 .review img{position: absolute; left: -80px;top: 50px;width: 100px; height: 100px;z-index: 10;}
 .review_box>p{position: absolute; top: 290px;right:70px;

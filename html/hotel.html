@@ -4,13 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title> 호텔예약-숙소예약 </title>
-    <link rel="stylesheet" href="../css/common/jquery-ui.css">
     <link rel="stylesheet" href="../css/common/common.css">
-    <link rel="stylesheet" href="../css/common/main.css">
+    <link rel="stylesheet" href="../css/main/main.css">
     <link rel="stylesheet" href="../css/hyunju.css">
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/common.js"></script>
-    <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/html5shiv.min.js"></script>
     <script src="../js/tab.js"></script>
     <script src="../js/datepiker.js"></script>
@@ -77,12 +75,12 @@
 
 <body>
     <div id="skip">
-        <a href="#fullpage">본문 바로가기</a>
+        <a href="#hotelSearch">본문 바로가기</a>
     </div>
     <header id="header">
         <div class="area clearfix p_r">
             <h1 class="logo p_a">
-                <a href=""><img src="../images/common/nav_logo.png" alt="레츠코레일"></a>
+                <a href="../index.html"><img src="images/common/nav_logo.png" alt="레츠코레일"></a>
             </h1>
             <nav id="gnb">
                 <h2 class="blind-b">주메뉴</h2>
@@ -94,7 +92,7 @@
                                 <a href=""><span>일반 승차권</span></a>
                             </li>
                             <li>
-                            <a href=""><span>할인 승차권</span></a>
+                                <a href=""><span>할인 승차권</span></a>
                             </li>
                             <li>
                                 <a href=""><span>4인 동반석</span></a>
@@ -105,7 +103,7 @@
                         </ul>
                     </li>
                     <li id="menu2" class="menu">
-                        <a href="">관광 열차</a>
+                        <a href="../html/Atrain.html">관광 열차</a>
                         <ul class="depth2">
                             <li class="cblue">
                                 <a href=""><span>동해산타열차</span></a>
@@ -141,7 +139,7 @@
                                 </ul>
                             </li>
                             <li class="cblue">
-                                <a href=""><span>정선아리랑열차</span></a>
+                                <a href="../html/Atrain.html"><span>정선아리랑열차</span></a>
                                 <ul class="depth3 cblack">
                                     <li>
                                         <a href=""><span>A-train 소개</span></a>
@@ -189,12 +187,12 @@
                         </ul>
                     </li>
                     <li id="menu3" class="menu">
-                        <a href="">자유 여행</a>
+                        <a href="../html/railro.html">자유 여행</a>
                         <ul class="depth2">
                             <li class="cblue menu2">
                                 <a href=""><span>국내여행패스</span></a>
                                 <ul class="depth3 cblack">
-                                    <li><a href=""><span>내일로</span></a></li>
+                                    <li><a href="../html/railro.html"><span>내일로</span></a></li>
                                     <li><a href=""><span>문화누리패스</span></a></li>
                                 </ul>
                             </li>
@@ -208,7 +206,7 @@
                         </ul>
                     </li>
                     <li id="menu4" class="menu">
-                        <a href="">여행 상품</a>
+                        <a href="../html/tour_index.html">여행 상품</a>
                         <ul class="depth2">
                             <li class="cblue p_r">
                                 <a href=""><span>테마별 패키지</span></a>
@@ -239,9 +237,9 @@
                         </ul>
                     </li>
                     <li id="menu5" class="menu">
-                        <a href="">숙소 예약</a>
+                        <a href="../html/hotel.html">숙소 예약</a>
                         <ul class="depth2 cblack">
-                            <li><a href=""><span>호텔</span></a></li>
+                            <li><a href="../html/hotel.html"><span>호텔</span></a></li>
                             <li><a href=""><span>리조트</span></a></li>
                             <li><a href=""><span>민박</span></a></li>
                         </ul>
@@ -250,7 +248,7 @@
             </nav>
             <div class="bluebox p_a">
                 <a href="">회원가입</a>
-                <a href="">로그인</a>
+                <a href="../html/login.html">로그인</a>
             </div>
         </div>
     </header>
@@ -678,22 +676,24 @@
             </article>
         </div>
     </section>
-    <footer id="footer">
-        <div class="area in_foot">
-            <ul>
-                <li><a href="#">홈페이지이용약관</a></li>
-                <li><a href="#">여객운송약관/부속약관</a></li>
-                <li class="privacy"><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">저작권정책</a></li>
-                <li><a href="#">정보공개</a></li>
-            </ul>
-            <div class="longtxt">
-                <p>대표자 : 손병석 | 상호 : 한국철도공사 | 사업자등록 : 314-52-10024 | 통신판매업신고 : 대전동구-0233호 <address> | 주소 : (34618) 대전광역시
-                        동구 중앙로 240 </address> | TEL : 1544-7788 | FAX : 02-361-8385</p>
+    <div class="section fp-auto-height">
+        <footer id="footer">
+            <div class="area in_foot">
+                <ul>
+                    <li><a href="#">홈페이지이용약관</a></li>
+                    <li><a href="#">여객운송약관/부속약관</a></li>
+                    <li class="privacy"><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li><a href="#">정보공개</a></li>
+                </ul>
+                <div class="longtxt">
+                    <p>대표자 : 손병석 | 상호 : 한국철도공사 | 사업자등록 : 314-52-10024 | 통신판매업신고 : 대전동구-0233호 </p>
+                    <address> | 주소 : (34618) 대전광역시 동구 중앙로 240  | TEL : 1544-7788 | FAX : 02-361-8385</address>
+                </div>
+                <p class="copy">COPYRIGHT @ KOREA RAILROAD. ALL RIGHTS RESERVED.</p>
             </div>
-            <p class="copy">COPYRIGHT @ KOREA RAILROAD. ALL RIGHTS RESERVED.</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
