@@ -1,4 +1,3 @@
-/* ------- railro page start ------- */
 @charset "utf-8";
 
 /* index 공통 */
@@ -8,6 +7,8 @@ body{font-family: "Noto Sans KR";font-size: 16px;color: #333333;line-height: 1.5
 .con_tit{letter-spacing: -0.7px; font-size: 50px; font-weight: bold;text-align: center;}
 .c_sub_tit{letter-spacing: -0.7px; font-size: 30px; font-weight: bold;text-align: center;}
 
+
+/* ------- railro page start ------- */
 /* contents */
 /* #mainSlider */
 #mainSlider, #mainSlider .visual li{width: 100%;height: 790px;}
@@ -61,8 +62,7 @@ body{font-family: "Noto Sans KR";font-size: 16px;color: #333333;line-height: 1.5
 #con2 .circle strong{display: table; letter-spacing: -0.7px; font-size: 32px;width: 301px; height: 301px;box-shadow: 8px 11.5px 50px 0 rgba(0, 0, 0, 0.2);  background-color: #eeeeee; border-radius: 50%;}
 #con2 .circle strong span{display: table-cell;vertical-align:middle;}
 #con2 ul p{display: block; margin-top: 62px; letter-spacing: -0.7px;font-size: 20px;}
-   
-#con2 ul li:nth-child(3)strong p{padding-top: 10px; }
+#con2 ul li:nth-child(3), #con2 strong p{padding-top: 10px;}
 
 /* #con3 : 내일로 이용안내 - 첫번째 tab*/
 
@@ -142,7 +142,7 @@ font-size: 24px;text-align: left;color:#333333;}
 #t_mainSlider form input{width: 400px; height: 60px;text-align: center;border-radius: 10px;color: #333333}
 #t_mainSlider button{width: 60px;height: 60px;background: #eee; border-radius: 10px;color: #333333}
 #t_mainSlider button:focus, #t_mainSlider button:hover{background: #50a7e5;color:#ffffff;}
-#t_mainSlider button img{width: 50px;height: 50px;fill-opacity: #ffffff;}
+#t_mainSlider button img{width: 50px;height: 50px;}
 
 
 #t_mainSlider ul li h2{display: block;margin-top: 274px;  letter-spacing: -0.7px; font-size: 60px;
@@ -152,7 +152,7 @@ font-size: 24px;text-align: left;color:#333333;}
 #t_mainSlider form input{width: 400px; height: 60px;text-align: center;border-radius: 10px;color: #333333}
 #t_mainSlider button{width: 60px;height: 60px;background: #eee; border-radius: 10px;color: #333333}
 #t_mainSlider button:focus, #t_mainSlider button:hover{background: #50a7e5;color:#ffffff;}
-#t_mainSlider button img{width: 50px;height: 50px;fill-opacity: #ffffff;}
+#t_mainSlider button img{width: 50px;height: 50px;}
 
 /* #t_mainSlider */
 #t_mainSlider, #t_mainSlider .visual li{width: 100%;height: 790px;}
