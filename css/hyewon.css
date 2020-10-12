@@ -75,7 +75,7 @@ body{font-family: "Noto Sans KR";font-size: 16px;color: #333333;line-height: 1.5
 #mainTab .tab{float: left;width: 380px;height: 50px;line-height: 48px;border: 1px solid #ccc;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #f2f2f2;font-size: 18px;color: #000;}
 #mainTab .tab + .tab{margin-left: 15px;}
 /* 4) 탭버튼 활성화 - 오버, li.active (포커스는 제외) */
-#mainTab .tab:hover, #mainTab .tab.active{background: #00326c;border-color: #00326c;color: #ffffff;cursor: pointer;}
+#mainTab .tab:hover, #mainTab .tab.active{background: #00326c;color: #ffffff;cursor: pointer;}
 /* 5) 탭패널 공통스타일 - 마지막 자식인 자세히보기링크를 absolute주기 위해, 모든 탭패널은 숨기고, .active를 가질 경우만 보이게 처리 */
 #mainTab .tabpanel{position: relative;padding-bottom: 70px;display: none;color: #ffffff;}
 #mainTab .tabpanel.active{display: block;}
@@ -110,7 +110,7 @@ font-size: 24px;text-align: left;color:#333333;}
 /* 3) 탭을 한줄에 위치, 스타일 */
 #con4Tab .tab{float: left;width: 680px;height: 50px;line-height: 48px;border: 1px solid #ccc;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #d4d4d4;font-size: 18px;color: #000;}
 /* 4) 탭버튼 활성화 - 오버, li.active (포커스는 제외) */
-#con4Tab .tab:hover,#con4Tab .tab.active{background: #50a7e5;border-color: #50a7e5; color: #ffffff;cursor: pointer;}
+#con4Tab .tab:hover,#con4Tab .tab.active{background: #50a7e5; color: #ffffff;cursor: pointer;}
 /* 5) 탭패널 공통스타일 - 마지막 자식인 자세히보기링크를 absolute주기 위해, 모든 탭패널은 숨기고, .active를 가질 경우만 보이게 처리 */
 #con4Tab .tabpanel{position: relative;padding-bottom: 70px;display: none;color: #333333;}
 #con4Tab .tabpanel.active{display: block;}
