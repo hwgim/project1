@@ -76,7 +76,7 @@
 #localTab .tabpanel .inner-price{display: block;font-size: 16px;color: #f2312c;font-weight: bold;margin-top: 8px;line-height: normal;}
 
 /* #tcon2 : 오늘의 핫 키워드 #테마여행 #패키지 */
-#tcon2{width: 1360px; height: 645px; text-align: center;}
+#tcon2{width: 1360px; height: 645px; background: pink; text-align: center;}
 
 #tcon2 ul{height: 400px;margin-top: 135px; text-align: center;margin-left:56px;} 
 #tcon2 ul li{position: relative; float: left;}
@@ -84,7 +84,7 @@
 #tcon2 li strong:hover{background-color: #50a7e5; }
 #tcon2 .circle strong{display: table; letter-spacing: -0.7px; font-size: 32px;width: 301px; height: 301px;box-shadow: 8px 11.5px 50px 0 rgba(0, 0, 0, 0.2);  background-color: #eeeeee; border-radius: 50%;}
 #tcon2 .circle strong span{display: table-cell;vertical-align:middle;}
-.arr_l, .arr_r{font-size: 50px;padding-top: 125px;}
+.arr_l, .arr_r{font-size: 50px;}
 
 /* #tcon3 : 이벤트 배너 슬라이드*/
 #tcon3{width: 1360px; height: 402px; margin-top: 210px;}
@@ -99,39 +99,32 @@
 
 /* 제어 버튼들 : 스크립트에서 동적 생성 */
 #eventSlider .bx-controls-direction a, #eventSlider .bx-controls-auto, #eventSlider .bx-pager{position: absolute;z-index: 100;}
+/* 1) 이전 , 다음 */
+#eventSlider .bx-controls-direction a{top: 100px;width: 54px;height: 53px;}
 
-/* play, stop */
+/* 2) play, stop */
 #eventSlider .bx-controls-auto{top: 350px;left: calc(50% + 36.5px);}
 #eventSlider .bx-controls-auto a{display: block;width: 27px;height: 27px;background: url("../images/tour/icon/btn_pause_play.png") no-repeat;}
 #eventSlider .bx-controls-auto .bx-start{background-position: right top;}
 #eventSlider .bx-controls-auto .bx-stop{background-position: left top;}
 #eventSlider .bx-controls-auto a.active{display: none;}/* 현재 동작중인 버튼이 .active라는 클래스명을 가짐 */
 
-/* 페이징 인디케이터 */
+/* 3) 페이징 인디케이터 */
 #eventSlider .bx-pager{top: 356px;left: calc(50% - 63.5px);width: 100px;height: 15px;}
 #eventSlider .bx-pager div{float: left;width: 15px;margin-right: 10px;}
 #eventSlider .bx-pager div a{display: block;height: 15px;border: 2px solid #fff;box-sizing: border-box;border-radius: 50%;}
 #eventSlider .bx-pager div a.active{background: #ffffff;}
 
+
 /* #tcon4 : 할인 & 특별 추천 패키지*/
 #tcon4{width: 1360px; height: 602px; margin-top: 210px; }
+
 #tcon4 ul{width: 1251px; height: 361px;margin-top: 135px;margin-left: 55px;}
 #tcon4 ul li{width: 290px; overflow: hidden; float: left;}
 #tcon4 ul li+li{margin-left: 30px;}
 
 /* #tcon5 : 코레일 투어 생생후기*/
-#tcon5{width: 1360px; margin-top: 210px;}
-.review{position: relative; left: 0;top: 0; height: 315px;background:#f7f7f7;margin-top: 135px;margin-bottom: 231px;}
-.youtube{position: absolute;left: 0;top: 0;width:560px; height:315px;}
-.review_box{position: absolute; left: 660px;top: 0;padding: 50px;}
-.review img{position: absolute; left: -80px;top: 50px;width: 100px; height: 100px;z-index: 10;}
-.review_box>p{position: absolute; top: 290px;right:70px;
-    display: inline-block; font-size: 15px;color: #666;font-weight: 400;}
-.review_box>p:hover, .review_box>p:focus{text-decoration: underline;cursor: pointer;}
-.arrow{position: absolute; display: block; top: 37px;left:-7px;width: 12px;height: 12px;transform: rotate(135deg)!important;background-color: #fff;z-index: 2;}
-.box{position: relative;  width: 550px; height: 155px;padding: 45px 40px 30px;background-color: #fff; border-radius: 13px;
-    -webkit-box-shadow: 6px 6px 30px hsla(0,0%,41.6%,.1);
-    box-shadow: 6px 6px 30px hsla(0,0%,41.6%,.1);}
-.review_tit{font-size: 24px;word-break: keep-all;line-height: 1.6;}
-.date{margin-left: 10px;font-size: 20px;}
-.review_txt{font-size: 15px;margin-top: 20px; margin-left: 10px; line-height: 1.6;color: #333;}
+
+#tcon5{width: 1360px; height: 402px; margin-top: 210px; background: lightgoldenrodyellow;}
+.review{margin-top: 135px;position: relative;}
+.review img{width: 100px; height: 100px;float: left;}

@@ -1,3 +1,22 @@
+/* @charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:regular,500,700);
+
+= tag reset =
+body, ul, p, h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+ul{list-style: none;}
+a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit;}
+
+= common class =
+.blind-b{width: 1px;height: 1px;overflow: hidden;border: none;position: absolute;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
+.blind-i{width: 1px;height: 1px;overflow: hidden;border: none;display: inline-block;margin: -1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
+
+.area{width: 1360px;margin: 0 auto;border: 1px solid red;}
+
+body{font-family: "Noto Sans KR";font-size: 16px;color: #333333;line-height: 1.5;}
+
+.con_tit{letter-spacing: -0.7px; font-size: 50px; font-weight: bold;text-align: center;}
+.c_sub_tit{letter-spacing: -0.7px; font-size: 30px; font-weight: bold;text-align: center;}
+ */
 @charset "utf-8";
 
 /* index 공통 */
@@ -20,7 +39,7 @@ body{font-family: "Noto Sans KR";font-size: 16px;color: #333333;line-height: 1.5
 .tit_p{display: block;margin-top: 208px;letter-spacing: -0.7px; font-weight: 200;}
 .tit{display: block;padding-top: 21px; letter-spacing: -0.7px; font-size: 60px;
     font-weight: bold;}
-.sub_tit{display: block; padding-top: 10px; font-weight: 400;font-size: 50px;}
+.sub_tit{display: block; padding-top: 0; font-weight: 400;font-size: 50px;}
 #mainSlider .visual li p{letter-spacing: -0.5px; padding-top: 10px;font-weight: 200; font-size: 18px; line-height: 28px;}
 
 /* 제어 버튼들 : 스크립트에서 동적 생성 */
@@ -42,7 +61,7 @@ body{font-family: "Noto Sans KR";font-size: 16px;color: #333333;line-height: 1.5
 #mainSlider .bx-pager div{float: left;width: 15px;margin-right: 10px;}
 #mainSlider .bx-pager div a{display: block;height: 15px;border: 2px solid #fff;box-sizing: border-box;border-radius: 50%;}
 #mainSlider .bx-pager div a.active{background: #ffffff;}
-
+/* // slider end! */
 
 /* #con1 : 내일로패스란? */
 #con1{height: 702px; margin-top: 210px;
@@ -81,12 +100,16 @@ body{font-family: "Noto Sans KR";font-size: 16px;color: #333333;line-height: 1.5
 #mainTab .tabpanel.active{display: block;}
 #con3{position: relative; height: 752px; margin-top: 210px;color: #333333; text-align: center;}
 #con3 .graybox_l, #con3 .graybox_r{position: absolute; float: left; width: 496px;height: 321px;
-margin-top: 100px;border-radius: 15px;background-color: #f3f3f3;color:#333;}
+margin-top: 100px;
+ border-radius: 15px;background-color: #f3f3f3;color:#333;}
+
 #con3 .graybox_l{margin-left: 84px;}
-#con3 .graybox_r{margin-left: 600px;} 
+#con3 .graybox_r{margin-left: 600px;}
+  
 #con3 .pinkbar, #con3 .bluebar{width: 424px;height: 74px;border-radius: 27px;
     line-height: 74px;margin-left: 34px;
     margin-top: -50px; font-size: 30px;color: #ffffff;}
+    
 #con3 .pinkbar{background-color: #ff98c7;}
 #con3 .bluebar{background-color: #3bb6f2;}
 #con3 .in_txt{margin-left: 110px; margin-top: 47px;font-size: 24px;text-align: left;}
@@ -114,6 +137,7 @@ font-size: 24px;text-align: left;color:#333333;}
 /* 5) 탭패널 공통스타일 - 마지막 자식인 자세히보기링크를 absolute주기 위해, 모든 탭패널은 숨기고, .active를 가질 경우만 보이게 처리 */
 #con4Tab .tabpanel{position: relative;padding-bottom: 70px;display: none;color: #333333;}
 #con4Tab .tabpanel.active{display: block;}
+
 #con4Tab .bg{background:#f3f3f3 ;width: 1360px;height: 1731px;}
 
 .app_txt{font-size: 28px;padding:60px 0; height: 84px;}
@@ -121,6 +145,8 @@ font-size: 24px;text-align: left;color:#333333;}
 .applist li{float: left;margin-left: 90px;margin-top: 60px;}
 .applist li figcaption{font-size: 20px;margin-top: 17px;}
 .applist li figure img{width: 338px;height: 581px;z-index: 999;}
+
+
 
 /* con5 : 주의사항 */
 #con5{ height: 323px;color: #333333;text-align: center;margin-top: 210px;}

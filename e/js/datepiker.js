@@ -22,7 +22,7 @@ $(document).ready(function () {
         maxDate : '1M+10D', //최대 선택일
         
         buttonImageOnly : true,
-        buttonImage : '../images/icon/hotel/calendar.png',  //현재 작성중인 js 파일이 기준이 아니라 버튼 이미지를 보여주는 html 문서 기준으로 경로명 설정
+        buttonImage : 'css/images/calendar.gif',  //현재 작성중인 js 파일이 기준이 아니라 버튼 이미지를 보여주는 html 문서 기준으로 경로명 설정
         showOn : 'both',     //focus:기본, input 태그에 포커스가 가면 캘린더를 열어라, button:버튼을 클릭하는 경우만, both : focus, 버튼을 클릭해도 열릴수 있도록
         
         showAnim : 'drop',                  //이펙트 효과가 생기면서 보여지기
