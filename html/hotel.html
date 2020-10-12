@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title> 호텔예약-숙소예약 </title>
+    <link rel="stylesheet" href="../css/common/jquery-ui.css">
     <link rel="stylesheet" href="../css/common/common.css">
-    <link rel="stylesheet" href="../css/main/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/hyunju.css">
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/html5shiv.min.js"></script>
     <script src="../js/tab.js"></script>
     <script src="../js/datepiker.js"></script>
@@ -28,24 +30,24 @@
                     var roomNum = $('#roomAmount').val();
                     var manNum = $('#manAmount').val();
                     $(this).closest('.room_cnt').hide();
-                    $('#room').val('객실'+roomNum+'-성인'+manNum);
+                    $('#room').val('객실' + roomNum + '-성인' + manNum);
                 });
             });
 
             //객실, 성인 수량증가,감소
-            $('.bt_up').click(function(){ 
+            $('.bt_up').click(function () {
                 var n = $('.bt_up').index(this);
-                var num = $(".num:eq("+n+")").val();
-                num = $(".num:eq("+n+")").val(num*1+1); 
+                var num = $(".num:eq(" + n + ")").val();
+                num = $(".num:eq(" + n + ")").val(num * 1 + 1);
             });
-            $('.bt_down').click(function(){ 
+            $('.bt_down').click(function () {
                 var n = $('.bt_down').index(this);
-                var num = $(".num:eq("+n+")").val();
-                num = $(".num:eq("+n+")").val(num*1-1); 
+                var num = $(".num:eq(" + n + ")").val();
+                num = $(".num:eq(" + n + ")").val(num * 1 - 1);
             });
-            $(".num_item button").on("click",function () {
+            $(".num_item button").on("click", function () {
                 var num = parseInt($(this).siblings('input').val());
-                
+
                 if ($(this).hasClass("num_up")) num += 1;
                 else if ($(this).hasClass("num_down")) {
                     num -= 1;
@@ -66,7 +68,8 @@
                 moveSlides: 2,
                 slideWidth: 603,
             });
-            $('.slide .bx-controls-direction a, .slide .bx-controls-auto-item a, .slide .bx-pager-item a').wrapInner('<span class="blind-b"></span>');
+            $('.slide .bx-controls-direction a, .slide .bx-controls-auto-item a, .slide .bx-pager-item a')
+                .wrapInner('<span class="blind-b"></span>');
         });
     </script>
     <link rel="icon" href="../images/common/Ko.ico">
@@ -80,7 +83,7 @@
     <header id="header">
         <div class="area clearfix p_r">
             <h1 class="logo p_a">
-                <a href="../index.html"><img src="../images/common/nav_logo.png" alt="레츠코레일"></a>
+                <a href=""><img src="../images/common/nav_logo.png" alt="레츠코레일"></a>
             </h1>
             <nav id="gnb">
                 <h2 class="blind-b">주메뉴</h2>
@@ -103,7 +106,7 @@
                         </ul>
                     </li>
                     <li id="menu2" class="menu">
-                        <a href="../html/Atrain.html">관광 열차</a>
+                        <a href="">관광 열차</a>
                         <ul class="depth2">
                             <li class="cblue">
                                 <a href=""><span>동해산타열차</span></a>
@@ -139,7 +142,7 @@
                                 </ul>
                             </li>
                             <li class="cblue">
-                                <a href="../html/Atrain.html"><span>정선아리랑열차</span></a>
+                                <a href=""><span>정선아리랑열차</span></a>
                                 <ul class="depth3 cblack">
                                     <li>
                                         <a href=""><span>A-train 소개</span></a>
@@ -187,12 +190,12 @@
                         </ul>
                     </li>
                     <li id="menu3" class="menu">
-                        <a href="../html/railro.html">자유 여행</a>
+                        <a href="">자유 여행</a>
                         <ul class="depth2">
                             <li class="cblue menu2">
                                 <a href=""><span>국내여행패스</span></a>
                                 <ul class="depth3 cblack">
-                                    <li><a href="../html/railro.html"><span>내일로</span></a></li>
+                                    <li><a href=""><span>내일로</span></a></li>
                                     <li><a href=""><span>문화누리패스</span></a></li>
                                 </ul>
                             </li>
@@ -206,7 +209,7 @@
                         </ul>
                     </li>
                     <li id="menu4" class="menu">
-                        <a href="../html/tour_index.html">여행 상품</a>
+                        <a href="">여행 상품</a>
                         <ul class="depth2">
                             <li class="cblue p_r">
                                 <a href=""><span>테마별 패키지</span></a>
@@ -237,9 +240,9 @@
                         </ul>
                     </li>
                     <li id="menu5" class="menu">
-                        <a href="../html/hotel.html">숙소 예약</a>
+                        <a href="">숙소 예약</a>
                         <ul class="depth2 cblack">
-                            <li><a href="../html/hotel.html"><span>호텔</span></a></li>
+                            <li><a href=""><span>호텔</span></a></li>
                             <li><a href=""><span>리조트</span></a></li>
                             <li><a href=""><span>민박</span></a></li>
                         </ul>
@@ -248,7 +251,7 @@
             </nav>
             <div class="bluebox p_a">
                 <a href="">회원가입</a>
-                <a href="../html/login.html">로그인</a>
+                <a href="">로그인</a>
             </div>
         </div>
     </header>
@@ -259,12 +262,12 @@
                 <strong class="font_white">국내호텔 예약은 코레일투어에서!</strong>
                 <form method="get" id="formBox">
                     <div class="city h">
-                        <label for="city" class="blind-b">여행장소</label> 
+                        <label for="city" class="blind-b">여행장소</label>
                         <input type="text" id="city" name="city" placeholder="어디로 여행하시나요?">
                         <button type="button"><img src="../images/icon/hotel/search.png" alt="검색"></button>
                     </div>
                     <div class="checkin h">
-                        <label for="from">체크인</label> 
+                        <label for="from">체크인</label>
                         <input type="text" id="from" class="from_to">
                     </div>
                     <div class="checkout h">
@@ -275,22 +278,27 @@
                     <div class="room">
                         <label for="room" class="blind-b">객실, 인원</label>
                         <input type="text" id="room" placeholder="객실1-성인1">
-                        <button class="btn_roomopen" type="button"><img src="../images/icon/hotel/expand-button.png" alt="확인"></button>
+                        <button class="btn_roomopen" type="button"><img src="../images/icon/hotel/expand-button.png"
+                                alt="확인"></button>
                         <div class="room_cnt p_a">
                             <div class="num_item clearfix">
                                 <label for="roomAmount">객실</label>
                                 <div class="inner">
                                     <input type="text" name="amount" id="roomAmount" value="1" readonly="readonly">
-                                    <button type="button" class="num_down"><img src="../images/icon/hotel/minus.png" alt="수량감소"></button>
-                                    <button type="button" class="num_up"><img src="../images/icon/hotel/plus.png" alt="수량추가"></button>
+                                    <button type="button" class="num_down"><img src="../images/icon/hotel/minus.png"
+                                            alt="수량감소"></button>
+                                    <button type="button" class="num_up"><img src="../images/icon/hotel/plus.png"
+                                            alt="수량추가"></button>
                                 </div>
                             </div>
                             <div class="num_item clearfix">
                                 <label for="manAmount">성인</label>
                                 <div class="inner">
                                     <input type="text" name="amount" id="manAmount" value="1" readonly="readonly">
-                                    <button type="button" class="num_down"><img src="../images/icon/hotel/minus.png" alt="수량감소"></button>
-                                    <button type="button" class="num_up"><img src="../images/icon/hotel/plus.png" alt="수량추가"></button>
+                                    <button type="button" class="num_down"><img src="../images/icon/hotel/minus.png"
+                                            alt="수량감소"></button>
+                                    <button type="button" class="num_up"><img src="../images/icon/hotel/plus.png"
+                                            alt="수량추가"></button>
                                 </div>
                             </div>
                             <div class="center">
@@ -298,7 +306,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <button type="button" class="font_white search">호텔검색</button>
                 </form>
 
@@ -457,7 +465,7 @@
                                     <p>오죽헌 시립박물관 부근에 위치</p>
                                     <p>강릉 그레이 호텔</p>
                                     <p>104,075원<span>~</span></p>
-                                    </a>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -655,7 +663,7 @@
                 <h3 class="blind-b">공지사항 및 이벤트</h3>
                 <ul class="notice font_white clearfix">
                     <li>
-                        <a href="#">  
+                        <a href="#">
                             <p>코로나 바이러스 공지</p>
                             <p>예약 및 취소 관련안내</p>
                         </a>
@@ -677,6 +685,7 @@
         </div>
     </section>
     <div class="section fp-auto-height">
+
         <footer id="footer">
             <div class="area in_foot">
                 <ul>
@@ -688,12 +697,11 @@
                 </ul>
                 <div class="longtxt">
                     <p>대표자 : 손병석 | 상호 : 한국철도공사 | 사업자등록 : 314-52-10024 | 통신판매업신고 : 대전동구-0233호 </p>
-                    <address> | 주소 : (34618) 대전광역시 동구 중앙로 240  | TEL : 1544-7788 | FAX : 02-361-8385</address>
+                    <address> | 주소 : (34618) 대전광역시 동구 중앙로 240 | TEL : 1544-7788 | FAX : 02-361-8385</address>
                 </div>
                 <p class="copy">COPYRIGHT @ KOREA RAILROAD. ALL RIGHTS RESERVED.</p>
             </div>
         </footer>
-    </div>
 </body>
 
 </html>
