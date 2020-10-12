@@ -3,8 +3,8 @@
 /* index 공통 */
 #header{position: fixed;top: 0;left: 0;width: 100%; z-index: 100;}
 /* index 1 */
-#cnt1{ text-align: center;color: #000000;background: #fff;background: url("../images/main/index1_bg.png") no-repeat center top; padding-top: 50px; background-size: cover; height: 920px;}
-.section .cnt .whiteBox {width: 1200px;height: 300px; background: rgba(255, 255, 255, 0.6); margin: 50px auto; }
+#cnt1{ text-align: center;color: #000000;background: #fff;background: url("../../images/main/index1_bg.png") no-repeat center top; padding-top: 50px; background-size: cover; height: 920px;}
+.section .cnt .whiteBox {width: 1200px;height: 300px; background: rgba(255, 255, 255, 0.6); margin: 50px auto;}
 .section .cnt h3{height: 150px; padding-top: 50px; margin: 0 auto; }
 .section .cnt .where{position: relative; width: 100%;  font-weight: 700; font-size: 35px; color: #333; margin-bottom: 50px;}
 .section .cnt .where::before{content: ""; position: absolute; width: 670px; height: 1px; left: calc(50% - 335px); top: -30px; background-color: #333;}
@@ -27,12 +27,13 @@
 #mainchoice .persons .textPersons{width: 100px; }
 .section .btn a{position: absolute;display: table; top: 800px; left: calc(50% - 100px); width: 200px; height: 80px; color: #fff; font-size: 25px; line-height: 80px; border: 1px solid #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; transition: all 0.5s;}
 .section .btn a:hover, section .btn a:focus{background: #083b82;}
-.section .arrow span{display: block; position: absolute; top: 900px; left: calc(50% - 15px); background: url("../images/main/arrow.png") no-repeat; width: 30px;height: 30px;}
+.section .arrow span{display: block; position: absolute; top: 900px; left: calc(50% - 15px); background: url("../../images/main/arrow.png") no-repeat; width: 30px;height: 30px;}
 .arrow span{top: 13px;-webkit-animation: arrow 3s 0s infinite;-moz-animation: arrow 1s 0s infinite;-o-animation: arrow 1s 0s infinite;animation: arrow 1s 0s infinite;} 
 @-webkit-keyframes arrow{0%{opacity: 0.5;}100%{opacity: 1;}}
 @-moz-keyframes arrow{0%{opacity: 0.5;}100%{opacity: 1;}}
 @-o-keyframes arrow{0%{opacity: 0.5;}100%{opacity: 1;}}
 @keyframes arrow{0%{opacity: 0.5;}100%{opacity: 1;}}
+
 /* index 2 공통 */
 #cnt2 img{display: block;}
 #cnt2{margin: 100px auto;height: 770px;}
@@ -64,7 +65,6 @@
 #cnt2 #discount ul li span{position: absolute; display: block; width: 300px; top: 220px; text-align: center; }
 #cnt2 #discount ul li a:hover ,#cnt2 #discount ul li a:focus{background: url("../../images/main/discount_over_txtbg.png"); }
 #cnt2 .main4 #on a:hover ,#cnt2 #discount ul li a:focus{color: #ffffff;}
-/* 질문:가로스크롤바가 생겨요 ㅜㅜ */
 
 /* 공지사항 */
 #cnt3 .cnt{ position: relative; background: url("../../images/main/notice_bg.png"); height: 500px; top: -20px; left: 0;}
