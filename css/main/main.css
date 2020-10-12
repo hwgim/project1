@@ -3,7 +3,7 @@
 /* index 공통 */
 #header{position: fixed;top: 0;left: 0;width: 100%; z-index: 100;}
 /* index 1 */
-#cnt1{ text-align: center;color: #000000;background: #fff;background: url("../../images/main/index1_bg.PNG") no-repeat center top; padding-top: 100px; background-size: cover; height: 920px;}
+#cnt1{ text-align: center;color: #000000;background: #fff;background: url("../../images/main/index1_bg.png") no-repeat center top; padding-top: 100px; background-size: cover; height: 920px;}
 .section .cnt .whiteBox {width: 1200px;height: 300px; background: rgba(255, 255, 255, 0.6); margin: 50px auto; }
 .section .cnt h3{height: 150px; padding-top: 50px; margin: 0 auto; }
 .section .cnt .where{position: relative; width: 100%;  font-weight: 700; font-size: 35px; color: #333; margin-bottom: 50px;}
