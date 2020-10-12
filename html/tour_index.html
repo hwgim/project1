@@ -35,7 +35,7 @@
             $('#t_mainSlider .bx-controls-direction a, #t_mainSlider .bx-controls-auto-item a, #t_mainSlider .bx-pager-item a')
                 .wrapInner('<span class="blind-b"></span>');
 
-            $('#t_mainSlider .visual').bxSlider({
+            $('#eventSlider .visual').bxSlider({
                 mode: 'fade', //'horizontal'(기본값), 'vertical', 'fade'
                 auto: true, //false(기본값), 자동실행을 원하면 추가
                 pause: 2000, //4000(4초 기본값), 1초 = 1000
@@ -48,12 +48,12 @@
                 stopText: '애니메이션 정지',
                 //창사이즈에 변화가 생길때 추가
                 onSliderResize: function () {
-                    $('#t_mainSlider .bx-pager-item a').wrapInner('<span class="blind-b"></span>');
+                    $('#eventSlider .bx-pager-item a').wrapInner('<span class="blind-b"></span>');
                 }
             });
 
             //bxslider에서 동적생성된 태그를 wrapInner()메서드를 통해 컨텐츠를 감싸는 태그를 추가 생성
-            $('#t_mainSlider .bx-controls-direction a, #t_mainSlider .bx-controls-auto-item a, #t_mainSlider .bx-pager-item a')
+            $('#eventSlider .bx-controls-direction a, #eventSlider .bx-controls-auto-item a, #eventSlider .bx-pager-item a')
                 .wrapInner('<span class="blind-b"></span>');
         });
     </script>
@@ -67,7 +67,7 @@
     <header id="header">
         <div class="area clearfix p_r">
             <h1 class="logo p_a">
-                <a href="../index.html"><img src="images/common/nav_logo.png" alt="레츠코레일"></a>
+                <a href="../index.html"><img src="../images/common/nav_logo.png" alt="레츠코레일"></a>
             </h1>
             <nav id="gnb">
                 <h2 class="blind-b">주메뉴</h2>
