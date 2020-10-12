@@ -15,36 +15,36 @@
   <script src="../js/tab.js"></script>
   <script>
     $(document).ready(function () {
-    $('#mainSlider .visual').bxSlider({
-      mode: 'fade', //'horizontal'(기본값), 'vertical', 'fade'
-      auto: true, //false(기본값), 자동실행을 원하면 추가
-      pause: 2000, //4000(4초 기본값), 1초 = 1000
-      autoControls: true, //시작과 정지버튼 생성, 기본값 false
-      ariaLive: true, //스크린리더 사용자에게 변경된 정보를 알릴지 여부
-      ariaHidden: true, //보여지는 슬라이더 내용인지 여부
-      prevText: '이전 슬라이더 보기',
-      nextText: '다음 슬라이더 보기',
-      startText: '애니메이션 시작',
-      stopText: '애니메이션 정지',
-      //창사이즈에 변화가 생길때 추가
-      onSliderResize: function () {
-        $('#mainSlider .bx-pager-item a').wrapInner('<span class="blind-b"></span>');
-      }
-    });
+      $('#mainSlider .visual').bxSlider({
+        mode: 'fade', //'horizontal'(기본값), 'vertical', 'fade'
+        auto: true, //false(기본값), 자동실행을 원하면 추가
+        pause: 2000, //4000(4초 기본값), 1초 = 1000
+        autoControls: true, //시작과 정지버튼 생성, 기본값 false
+        ariaLive: true, //스크린리더 사용자에게 변경된 정보를 알릴지 여부
+        ariaHidden: true, //보여지는 슬라이더 내용인지 여부
+        prevText: '이전 슬라이더 보기',
+        nextText: '다음 슬라이더 보기',
+        startText: '애니메이션 시작',
+        stopText: '애니메이션 정지',
+        //창사이즈에 변화가 생길때 추가
+        onSliderResize: function () {
+          $('#mainSlider .bx-pager-item a').wrapInner('<span class="blind-b"></span>');
+        }
+      });
 
-    //bxslider에서 동적생성된 태그를 wrapInner()메서드를 통해 컨텐츠를 감싸는 태그를 추가 생성
-    $('#mainSlider .bx-controls-direction a, #mainSlider .bx-controls-auto-item a, #mainSlider .bx-pager-item a')
-      .wrapInner('<span class="blind-b"></span>');
+      //bxslider에서 동적생성된 태그를 wrapInner()메서드를 통해 컨텐츠를 감싸는 태그를 추가 생성
+      $('#mainSlider .bx-controls-direction a, #mainSlider .bx-controls-auto-item a, #mainSlider .bx-pager-item a')
+        .wrapInner('<span class="blind-b"></span>');
 
-    // skip네비게이션 
-    $('#skip a').on('click', function () {
-      var target = $(this).attr('href');
-      console.log(target);
+      // skip네비게이션 
+      $('#skip a').on('click', function () {
+        var target = $(this).attr('href');
+        console.log(target);
 
-      $(target).attr('tabIndex', -1).focus();
+        $(target).attr('tabIndex', -1).focus();
 
-      return false;
-    });
+        return false;
+      });
     });
   </script>
 </head>
