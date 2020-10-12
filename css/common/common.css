@@ -62,9 +62,9 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 #gnb ul li ul li a:hover::before,#gnb ul li ul li a:focus::before{background: #FECD6E;}
 #gnb ul .depth2 .menu2+.menu2{margin-left: 35px;}
 #header .bluebox {font-size: 15px; top: 35px; right: 0; height: 20px;}
-#header .bluebox a{float: left; text-align: center; width: 90px;height: 30px; line-height: 30px; background-color: #083b82; color: #fff; border: 1px solid #083b82; }
+#header .bluebox a{float: left; text-align: center; width: 90px;height: 30px; line-height: 30px; background-color: #083b82; color: #ffffff; border: 1px solid #ffffff; }
 #header .bluebox a+a{margin-left: 20px;}
-#header .bluebox a:hover, #gnb .bluebox a:focus{background: #fff; color: #083b82; border: 1px solid#083b82;transition:all 0.3s;}
+#header .bluebox a:hover, #gnb .bluebox a:focus{background: #ffffff; color: #083b82; border: 1px solid#083b82;transition:all 0.3s;}
 #header .bluebox a:focus{outline:3px solid #fc4a1e;}
 
 /* 툴팁 */
